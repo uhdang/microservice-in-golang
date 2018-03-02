@@ -10,7 +10,7 @@ type service struct {
 	tokenService Authable
 }
 
-func (srv *service) Get(ctxx context.Context, req *pb.User, res *pb.Response) error {
+func (srv *service) Get(ctx context.Context, req *pb.User, res *pb.Response) error {
 	user, err := srv.repo.Get(req.Id)
 	if err != nil {
 		return err

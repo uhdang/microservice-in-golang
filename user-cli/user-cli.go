@@ -41,10 +41,10 @@ func main() {
 		),
 	)
 
+	// Start as service
 	service.Init(
 
 		micro.Action(func(c *cli.Context) {
-
 			name := c.String("name")
 			email := c.String("email")
 			password := c.String("password")

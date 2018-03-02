@@ -1,8 +1,8 @@
 package main
 
 import (
-	pb "github.com/EwanValentine/shippy/user-service/proto/user"
 	"github.com/jinzhu/gorm"
+	pb "github.com/uhdang/microservice-in-golang/user-service/proto/user"
 )
 
 type Repository interface {
