@@ -15,6 +15,6 @@ RUN apk --no-cache add ca-certificates
 
 RUN mkdir/app
 WORKDIR /app
-COPY --from=builder /go/src/github.com/uhdang/microservice-in-golang/vessel-service/vesse-service .
+COPY --from=builder /go/src/github.com/uhdang/microservice-in-golang/vessel-service/vessel-service .
 
 CMD ["./vessel-service"]
