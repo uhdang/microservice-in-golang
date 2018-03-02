@@ -1,7 +1,6 @@
 build:
 		protoc -I. --go_out=plugins=micro:$(GOPATH)/src/github.com/uhdang/microservice-in-golang/vessel-service \
 			proto/vessel/vessel.proto
-		docker build --no-cache -t vessel-service .
 
 run:
 		docker run --name c-vessel-service \
